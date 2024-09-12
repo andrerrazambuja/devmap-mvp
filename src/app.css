@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #1e1e1e; /* Optional: background to match the Darkula theme */
+    color: #e5e5e5; /* Optional: light gray text for readability */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Code', monospace;
+  }
+  
+  p {
+    font-family: 'Fira Code', monospace;
+  }
+  
