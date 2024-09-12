@@ -1,0 +1,34 @@
+{
+  "home": {
+    "description": "Descubre el camino ideal con cursos seleccionados para dominar el arte de la programación.",
+    "roadmaps": {
+      "beginner": {
+        "name": "Principiante",
+        "description": "El punto de partida perfecto para aquellos que son nuevos en la programación. Aprende los fundamentos y crea tu primera aplicación."
+      },
+      "frontEnd": {
+        "name": "Front-End",
+        "description": "Aprende a crear interfaces de usuario atractivas y receptivas con HTML, CSS y JavaScript, dominando el desarrollo visual."
+      },
+      "backEnd": {
+        "name": "Back-End",
+        "description": "Construye servidores robustos, APIs eficientes y gestiona bases de datos con lenguajes como Node.js, Python o Java."
+      },
+      "fullStack": {
+        "name": "Full-Stack",
+        "description": "Conviértete en un desarrollador completo, capaz de trabajar tanto en el front-end como en el back-end para crear aplicaciones completas."
+      },
+      "database": {
+        "name": "Base de Datos",
+        "description": "Entiende cómo diseñar, gestionar y optimizar bases de datos relacionales y NoSQL, fundamentales para cualquier aplicación moderna."
+      },
+      "ai": {
+        "name": "Inteligencia Artificial",
+        "description": "Explora el fascinante mundo de la IA y el machine learning, aprendiendo a crear modelos y soluciones inteligentes."
+      }
+    }
+  },
+  "footer": {
+    "madeBy": "Hecho con 🔥 por"
+  }
+}

@@ -1,31 +1,63 @@
 <script>
-  const roadmaps = [
+  import { t } from "svelte-i18n";
+
+  // Definir roadmaps com cores aplicadas no título
+  let roadmaps;
+  $: roadmaps = [
     {
-      name: "Front-End Developer",
-      description:
-        "Learn the skills necessary to build beautiful and responsive user interfaces using HTML, CSS, and JavaScript.",
+      name: $t("home.roadmaps.beginner.name"),
+      description: $t("home.roadmaps.beginner.description"),
+      titleColor: "text-green-400", // Cor verde para o título do Iniciante
     },
     {
-      name: "Back-End Developer",
-      description:
-        "Focus on building APIs, working with databases, and server-side logic with languages like Node.js, Python, or Java.",
+      name: $t("home.roadmaps.frontEnd.name"),
+      description: $t("home.roadmaps.frontEnd.description"),
+      titleColor: "text-yellow-400", // Cor amarela para o Front-End
     },
     {
-      name: "Full-Stack Developer",
-      description:
-        "Become proficient in both front-end and back-end development, enabling you to build complete applications from start to finish.",
-    }
+      name: $t("home.roadmaps.backEnd.name"),
+      description: $t("home.roadmaps.backEnd.description"),
+      titleColor: "text-yellow-400", // Cor amarela para o Back-End
+    },
+    {
+      name: $t("home.roadmaps.fullStack.name"),
+      description: $t("home.roadmaps.fullStack.description"),
+      titleColor: "text-orange-400", // Cor laranja para o Full-Stack
+    },
+    {
+      name: $t("home.roadmaps.database.name"),
+      description: $t("home.roadmaps.database.description"),
+      titleColor: "text-orange-400", // Cor laranja para o Banco de Dados
+    },
+    {
+      name: $t("home.roadmaps.ai.name"),
+      description: $t("home.roadmaps.ai.description"),
+      titleColor: "text-purple-400", // Cor roxa para IA (Inteligência Artificial)
+    },
   ];
 </script>
 
+<!-- Adicionar a fonte Fira Code -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+  .fira-code {
+    font-family: 'Fira Code', monospace;
+  }
+</style>
+
 <div
-  class="flex flex-col items-center justify-start bg-gray-900 text-gray-300 pt-8"
+  class="flex flex-col items-center justify-start bg-gray-900 text-gray-300 pt-8 fira-code"
 >
   <h1
-    class="text-5xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent"
+    class="text-5xl font-bold mb-5 bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent"
   >
-    DevMap
+    devmap
   </h1>
+
+  <p class="text-center text-gray-400 text-xl mb-12">
+    {$t("home.description")}
+  </p>
 
   <!-- Roadmaps List -->
   <div
@@ -35,8 +67,13 @@
       <div
         class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col justify-between w-full md:w-auto"
       >
-        <h2 class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">{roadmap.name}</h2>
-        <p class="text-gray-400">{roadmap.description}</p>
+        <!-- Aplicar cor ao título usando titleColor -->
+        <h2
+          class="text-2xl font-bold mb-5 {roadmap.titleColor}"
+        >
+          {roadmap.name}
+        </h2>
+        <p class="text-gray-100">{roadmap.description}</p>
       </div>
     {/each}
   </div>

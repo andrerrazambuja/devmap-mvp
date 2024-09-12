@@ -1,0 +1,34 @@
+{
+  "home": {
+    "description": "Descubra o caminho perfeito com cursos selecionados para se tornar um desenvolvedor.",
+    "roadmaps": {
+      "beginner": {
+        "name": "Iniciante",
+        "description": "O início perfeito para quem está começando no mundo da programação. Aprenda os fundamentos e crie sua primeira aplicação."
+      },
+      "frontEnd": {
+        "name": "Front-End",
+        "description": "Aprenda a criar interfaces de usuário atraentes e responsivas com HTML, CSS e JavaScript, dominando o desenvolvimento visual."
+      },
+      "backEnd": {
+        "name": "Back-End",
+        "description": "Construa servidores robustos, APIs eficientes e gerencie bancos de dados com linguagens como Node.js, Python ou Java."
+      },
+      "fullStack": {
+        "name": "Full-Stack",
+        "description": "Torne-se um desenvolvedor completo, capaz de trabalhar tanto no front-end quanto no back-end para criar aplicações completas."
+      },
+      "database": {
+        "name": "Banco de Dados",
+        "description": "Entenda como projetar, gerenciar e otimizar bancos de dados relacionais e NoSQL, fundamentais para qualquer aplicação moderna."
+      },
+      "ai": {
+        "name": "Inteligência Artificial",
+        "description": "Explore o fascinante mundo da IA e machine learning, aprendendo a criar modelos e soluções inteligentes."
+      }
+    }
+  },
+  "footer": {
+    "madeBy": "Feito com 🔥 por"
+  }
+}

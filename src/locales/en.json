@@ -1,0 +1,34 @@
+{
+  "home": {
+    "description": "Unlock the perfect path with handpicked courses to master the art of programming.",
+    "roadmaps": {
+      "beginner": {
+        "name": "Beginner",
+        "description": "The perfect starting point for those new to programming. Learn the fundamentals and build your first application."
+      },
+      "frontEnd": {
+        "name": "Front-End",
+        "description": "Learn to create beautiful, responsive user interfaces with HTML, CSS, and JavaScript, mastering visual development."
+      },
+      "backEnd": {
+        "name": "Back-End",
+        "description": "Build robust servers, efficient APIs, and manage databases using languages like Node.js, Python, or Java."
+      },
+      "fullStack": {
+        "name": "Full-Stack",
+        "description": "Become a complete developer, able to work on both front-end and back-end, building full applications from start to finish."
+      },
+      "database": {
+        "name": "Database",
+        "description": "Understand how to design, manage, and optimize relational and NoSQL databases, essential for any modern application."
+      },
+      "ai": {
+        "name": "Artificial Intelligence",
+        "description": "Dive into the fascinating world of AI and machine learning, learning to create intelligent models and solutions."
+      }
+    }
+  },
+  "footer": {
+    "madeBy": "Made with 🔥 by"
+  }
+}
