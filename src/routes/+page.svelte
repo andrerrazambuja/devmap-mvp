@@ -22,7 +22,7 @@
   class="flex flex-col items-center justify-start bg-gray-900 text-gray-300 pt-8"
 >
   <h1
-    class="text-5xl font-bold mb-8 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent"
+    class="text-5xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent"
   >
     DevMap
   </h1>
@@ -35,7 +35,7 @@
       <div
         class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col justify-between w-full md:w-auto"
       >
-        <h2 class="text-2xl font-bold text-purple-400 mb-2">{roadmap.name}</h2>
+        <h2 class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">{roadmap.name}</h2>
         <p class="text-gray-400">{roadmap.description}</p>
       </div>
     {/each}
