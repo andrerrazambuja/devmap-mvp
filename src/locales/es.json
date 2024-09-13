@@ -30,5 +30,10 @@
   },
   "footer": {
     "madeBy": "Hecho con 🔥 por"
+  },
+  "error": {
+    "pageNotFound": "Página no encontrada",
+    "pageDescription": "Parece que la página que estás buscando no existe.",
+    "backToMenu": "Volver al menú"
   }
 }
