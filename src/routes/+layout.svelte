@@ -2,17 +2,14 @@
   import "../app.css";
   import { onMount } from 'svelte';
   import { initializeI18n, changeLocale } from '../i18n';
-  import { t } from 'svelte-i18n'; // Função de tradução
+  import { t } from 'svelte-i18n';
   
-  // Inicializar as traduções no momento em que o componente é montado
   let localeReady = false;
-
   onMount(async () => {
     await initializeI18n();
     localeReady = true;
   });
 
-  // Função para trocar o idioma
   function handleChangeLocale(language) {
     changeLocale(language);
   }
@@ -20,7 +17,7 @@
 
 {#if localeReady}
   <div class="flex flex-col min-h-screen bg-gray-900 text-gray-300">
-    <header class="bg-gray-800 p-4 flex items-center justify-end">
+    <header class="bg-gray-800 p-4 flex items-center justify-center md:justify-end">
       <div class="flex space-x-4 text-2xl">
         <button 
           type="button"
@@ -31,7 +28,7 @@
           title="Português">
           <img src="/flag-br.svg" alt="Português" class="w-8 h-8" />
         </button>
-
+    
         <button 
           type="button"
           class="cursor-pointer"
@@ -41,7 +38,7 @@
           title="English">
           <img src="/flag-us.svg" alt="English" class="w-8 h-8" />
         </button>
-
+    
         <button 
           type="button"
           class="cursor-pointer"
@@ -67,6 +64,5 @@
     </footer>
   </div>
 {:else}
-  <!-- No caso de o locale não estar pronto, renderizar algo básico -->
   <div>Carregando...</div>
 {/if}

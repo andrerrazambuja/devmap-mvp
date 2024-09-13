@@ -1,43 +1,41 @@
 <script>
   import { t } from "svelte-i18n";
 
-  // Definir roadmaps com cores aplicadas no título
   let roadmaps;
   $: roadmaps = [
     {
       name: $t("home.roadmaps.beginner.name"),
       description: $t("home.roadmaps.beginner.description"),
-      titleColor: "text-green-400", // Cor verde para o título do Iniciante
+      titleColor: "text-green-400",
     },
     {
       name: $t("home.roadmaps.frontEnd.name"),
       description: $t("home.roadmaps.frontEnd.description"),
-      titleColor: "text-yellow-400", // Cor amarela para o Front-End
+      titleColor: "text-yellow-400",
     },
     {
       name: $t("home.roadmaps.backEnd.name"),
       description: $t("home.roadmaps.backEnd.description"),
-      titleColor: "text-yellow-400", // Cor amarela para o Back-End
+      titleColor: "text-yellow-400",
     },
     {
       name: $t("home.roadmaps.fullStack.name"),
       description: $t("home.roadmaps.fullStack.description"),
-      titleColor: "text-orange-400", // Cor laranja para o Full-Stack
+      titleColor: "text-orange-400",
     },
     {
       name: $t("home.roadmaps.database.name"),
       description: $t("home.roadmaps.database.description"),
-      titleColor: "text-orange-400", // Cor laranja para o Banco de Dados
+      titleColor: "text-orange-400",
     },
     {
       name: $t("home.roadmaps.ai.name"),
       description: $t("home.roadmaps.ai.description"),
-      titleColor: "text-purple-400", // Cor roxa para IA (Inteligência Artificial)
+      titleColor: "text-purple-400",
     },
   ];
 </script>
 
-<!-- Adicionar a fonte Fira Code -->
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
 
@@ -55,7 +53,7 @@
     devmap
   </h1>
 
-  <p class="text-center text-gray-400 text-xl mb-12">
+  <p class="text-center text-gray-400 text-base md:text-xl mb-12">
     {$t("home.description")}
   </p>
 
@@ -67,7 +65,6 @@
       <div
         class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col justify-between w-full md:w-auto"
       >
-        <!-- Aplicar cor ao título usando titleColor -->
         <h2
           class="text-2xl font-bold mb-5 {roadmap.titleColor}"
         >
