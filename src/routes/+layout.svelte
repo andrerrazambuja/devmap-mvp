@@ -17,8 +17,8 @@
 
 {#if localeReady}
   <div class="flex flex-col min-h-screen bg-gray-900 text-gray-300">
-    <header class="bg-gray-800 p-4 flex items-center justify-center md:justify-end">
-      <div class="flex space-x-4 text-2xl">
+    <header class="bg-gray-800 p-2 flex items-center justify-center md:justify-end">
+      <div class="flex space-x-2 text-2xl">
         <button 
           type="button"
           class="cursor-pointer"

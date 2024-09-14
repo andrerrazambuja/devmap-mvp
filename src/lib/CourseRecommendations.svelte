@@ -64,13 +64,13 @@
               <img
                 src={getFlag(course.language)}
                 alt={course.language}
-                class="w-6 h-6 mr-2"
+                class="w-6 h-6 mr-6"
               />
               <a
                 href={course.url}
                 target="_blank"
                 rel="noopener"
-                class="text-purple-400 hover:underline"
+                class="text-purple-300 hover:underline"
               >
                 {course.name}
               </a>
