@@ -56,7 +56,4 @@
   .text-gray-200 {
     color: #d4d4d4;
   }
-  .text-gray-400 {
-    color: #9ca3af;
-  }
 </style>
