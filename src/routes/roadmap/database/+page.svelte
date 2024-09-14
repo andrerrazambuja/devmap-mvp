@@ -3,7 +3,22 @@
   import { t } from "svelte-i18n";
 
   let events;
-  $: events = [];
+  $: events = [
+    {
+      title: $t("roadmaps.beginner.events.logic.title"),
+      description: $t("roadmaps.beginner.events.logic.description"),
+      courses: [
+        { name: "Curso de JavaScript", url: "https://cursojs.com", language: "pt", rank: 1 },
+        { name: "React for Beginners", url: "https://reactcourse.com", language: "en", rank: 2 },
+        { name: "Curso Avançado de Git", url: "https://cursogit.com", language: "es", rank: 3 },
+        { name: "Especial Python", url: "https://especialpython.com", language: "pt", rank: 'X' }
+      ]
+    }
+  ];
+    let local_name = "checked_database"
+  let checkedStates = JSON.parse(localStorage.getItem(local_name)) || {};
+ 
+  
 </script>
 
 <div class="text-center py-8">
@@ -20,4 +35,4 @@
   </p>
 </div>
 
-<RoadmapComponent {events} />
+<RoadmapComponent {events} {checkedStates} {local_name} />
