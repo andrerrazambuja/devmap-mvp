@@ -61,7 +61,7 @@
   >
     {#each roadmaps as roadmap}
       <a
-        class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col justify-between w-full md:w-auto cursor-pointer"
+        class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col justify-between w-full md:w-auto cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:ring-4"
         href={roadmap.route}
       >
         <h2 class="text-2xl font-bold mb-5 {roadmap.titleColor}">
