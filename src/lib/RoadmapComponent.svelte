@@ -1,11 +1,13 @@
 <script>
   import CourseRecommendations from './CourseRecommendations.svelte'; 
 
-  let checkedStates = JSON.parse(localStorage.getItem('checkedStates')) || {};
+  export let events = []; 
+  export let checkedStates = {}; 
 
   function saveCheckedState(index, isChecked) {
     checkedStates[index] = isChecked;
-    localStorage.setItem('checkedStates', JSON.stringify(checkedStates));
+    // Save checked states directly to localStorage
+    localStorage.setItem('checkedStates_beginner', JSON.stringify(checkedStates));
   }
 </script>
 

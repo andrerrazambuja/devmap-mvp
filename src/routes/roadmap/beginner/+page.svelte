@@ -31,6 +31,8 @@
       description: $t("roadmaps.beginner.events.git.description"),
     },
   ];
+
+ let checkedStates = JSON.parse(localStorage.getItem('checkedStates_beginner')) || {};
 </script>
 
 <div class="text-center py-8">
@@ -47,4 +49,4 @@
   </p>
 </div>
 
-<RoadmapComponent {events} />
+<RoadmapComponent {events} {checkedStates} />
