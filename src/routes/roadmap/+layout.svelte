@@ -14,9 +14,9 @@
       on:click={voltarParaHome}
       aria-label="Voltar ao Menu"
     >
-      Home 
+      home&nbsp;
     </button>
-    /Roadmaps
+    / roadmaps
   </div>
   
   <slot />
