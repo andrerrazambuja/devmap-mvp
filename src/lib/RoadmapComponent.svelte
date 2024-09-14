@@ -1,6 +1,12 @@
 <script>
-  import CourseRecommendations from './CourseRecommendations.svelte'; // Importa o componente de cursos
-  export let events = []; // Lista de passos do roadmap
+  import CourseRecommendations from './CourseRecommendations.svelte'; 
+
+  let checkedStates = JSON.parse(localStorage.getItem('checkedStates')) || {};
+
+  function saveCheckedState(index, isChecked) {
+    checkedStates[index] = isChecked;
+    localStorage.setItem('checkedStates', JSON.stringify(checkedStates));
+  }
 </script>
 
 <div class="">
@@ -9,11 +15,12 @@
       {#if index % 2 === 0}
         <div class="flex md:contents flex-row-reverse">
           <div
-            class="relative p-4 my-6 text-gray-200 bg-gray-700 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto"
+            class="relative p-4 my-6 text-gray-200 bg-gray-700 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto
+              {checkedStates[index] ? 'checked-event' : ''}"
           >
+            <input type="checkbox" class="absolute top-2 right-2" checked={checkedStates[index]} on:change="{(e) => saveCheckedState(index, e.target.checked)}" />
             <h3 class="text-lg font-semibold lg:text-xl">{event.title}</h3>
             <p class="mt-2 leading-6">{event.description}</p>
-            <!-- Passando corretamente o courses -->
             <CourseRecommendations courses={event.courses} />
           </div>
           <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
@@ -38,11 +45,12 @@
             ></div>
           </div>
           <div
-            class="relative p-4 my-6 text-gray-200 bg-gray-700 rounded-xl col-start-6 col-end-10 mr-auto"
+            class="relative p-4 my-6 text-gray-200 bg-gray-700 rounded-xl col-start-6 col-end-10 mr-auto
+              {checkedStates[index] ? 'checked-event' : ''}"
           >
+            <input type="checkbox" class="absolute top-2 right-2" checked={checkedStates[index]} on:change="{(e) => saveCheckedState(index, e.target.checked)}" />
             <h3 class="text-lg font-semibold lg:text-xl">{event.title}</h3>
             <p class="mt-2 leading-6">{event.description}</p>
-            <!-- Passando corretamente o courses -->
             <CourseRecommendations courses={event.courses} />
           </div>
         </div>
@@ -60,5 +68,22 @@
   }
   .text-gray-200 {
     color: #d4d4d4;
+  }
+  input[type="checkbox"] {
+    transform: scale(1.5);
+  }
+  .checked-event {
+    position: relative;
+    box-shadow: 0 0 0 4px rgb(82, 201, 82); 
+  }
+  .checked-event::before {
+    content: '✔'; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px; 
+    color: rgb(82, 201, 82); 
+    z-index: 1;
   }
 </style>
