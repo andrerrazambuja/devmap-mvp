@@ -57,9 +57,7 @@
 
     <footer class="bg-gray-850 text-gray-400 p-4 text-center flex-shrink-0">
       <p>
-        {$t('footer.madeBy')} <a
-          href="https://github.com/andrerrazambuja"
-          class="underline text-gray-300 hover:text-purple-400">@andrerrazambuja</a>
+        {$t('footer.madeBy')}
       </p>
     </footer>
   </div>
