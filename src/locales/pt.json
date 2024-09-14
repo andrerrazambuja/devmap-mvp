@@ -28,6 +28,59 @@
       }
     }
   },
+  "roadmaps": {
+    "beginner": {
+      "events": {
+        "logic": {
+          "title": "Aprender Lógica de Programação",
+          "description": "Antes de mergulhar no código, é importante entender como resolver problemas de forma lógica. Estude conceitos como variáveis, loops e condições."
+        },
+        "dataStructures": {
+          "title": "Familiarize-se com Estruturas de Dados Simples",
+          "description": "Aprenda sobre arrays, listas e dicionários (ou objetos), que são fundamentais para organizar e processar dados em programação."
+        },
+        "algorithms": {
+          "title": "Entenda os Conceitos de Algoritmos",
+          "description": "Estude algoritmos comuns, como ordenação e busca, amplamente utilizados em soluções de problemas reais."
+        },
+        "webDevelopment": {
+          "title": "Aprenda sobre Desenvolvimento Web Básico",
+          "description": "Familiarize-se com HTML, CSS e JavaScript para entender os fundamentos de como as páginas da web funcionam."
+        },
+        "git": {
+          "title": "Domine o Controle de Versão com Git",
+          "description": "O Git é uma ferramenta essencial para qualquer programador. Aprenda a versionar seu código e compartilhar projetos no GitHub."
+        }
+      }
+    },
+    "description": "Descubra o melhor caminho com cursos selecionados para se tornar um grande desenvolvedor.",
+    "roadmaps": {
+      "beginner": {
+        "name": "Iniciante",
+        "description": "O início perfeito para quem está começando no mundo da programação. Aprenda os fundamentos e crie sua primeira aplicação."
+      },
+      "frontEnd": {
+        "name": "Front-End",
+        "description": "Aprenda a criar interfaces de usuário atraentes e responsivas com HTML, CSS e JavaScript, dominando o desenvolvimento visual."
+      },
+      "backEnd": {
+        "name": "Back-End",
+        "description": "Construa servidores robustos, APIs eficientes e gerencie bancos de dados com linguagens como Node.js, Python ou Java."
+      },
+      "fullStack": {
+        "name": "Full-Stack",
+        "description": "Torne-se um desenvolvedor completo, capaz de trabalhar tanto no front-end quanto no back-end para criar aplicações completas."
+      },
+      "database": {
+        "name": "Banco de Dados",
+        "description": "Entenda como projetar, gerenciar e otimizar bancos de dados relacionais e NoSQL, fundamentais para qualquer aplicação moderna."
+      },
+      "ai": {
+        "name": "Inteligência Artificial",
+        "description": "Explore o fascinante mundo da IA e machine learning, aprendendo a criar modelos e soluções inteligentes."
+      }
+    }
+  },
   "footer": {
     "madeBy": "Feito com 🔥 por devmap team"
   },

@@ -4,7 +4,29 @@
     "roadmaps": {
       "beginner": {
         "name": "Principiante",
-        "description": "El punto de partida perfecto para aquellos que son nuevos en la programación. Aprende los fundamentos y crea tu primera aplicación."
+        "description": "El punto de partida perfecto para aquellos que son nuevos en la programación. Aprende los fundamentos y crea tu primera aplicación.",
+        "events": {
+          "logic": {
+            "title": "Aprender Lógica de Programación",
+            "description": "Antes de sumergirte en el código, es importante entender cómo resolver problemas de forma lógica. Estudia conceptos como variables, bucles y condiciones."
+          },
+          "dataStructures": {
+            "title": "Familiarízate con Estructuras de Datos Simples",
+            "description": "Aprende sobre arrays, listas y diccionarios (o objetos), que son fundamentales para organizar y procesar datos en programación."
+          },
+          "algorithms": {
+            "title": "Entiende los Conceptos de Algoritmos",
+            "description": "Estudia algoritmos comunes, como ordenación y búsqueda, que se utilizan ampliamente en soluciones de problemas del mundo real."
+          },
+          "webDevelopment": {
+            "title": "Aprende sobre Desarrollo Web Básico",
+            "description": "Familiarízate con HTML, CSS y JavaScript para entender cómo funcionan y se desarrollan las páginas web."
+          },
+          "git": {
+            "title": "Domina el Control de Versiones con Git",
+            "description": "Git es una herramienta esencial para cualquier programador. Aprende a versionar tu código y compartir proyectos en GitHub."
+          }
+        }
       },
       "frontEnd": {
         "name": "Front-End",
@@ -25,6 +47,32 @@
       "ai": {
         "name": "Inteligencia Artificial",
         "description": "Explora el fascinante mundo de la IA y el machine learning, aprendiendo a crear modelos y soluciones inteligentes."
+      }
+    }
+  },
+  "roadmaps": {
+    "beginner": {
+      "events": {
+        "logic": {
+          "title": "Aprender Lógica de Programación",
+          "description": "Antes de sumergirte en el código, es importante entender cómo resolver problemas de forma lógica. Estudia conceptos como variables, bucles y condiciones."
+        },
+        "dataStructures": {
+          "title": "Familiarízate con Estructuras de Datos Simples",
+          "description": "Aprende sobre arrays, listas y diccionarios (o objetos), que son fundamentales para organizar y procesar datos en programación."
+        },
+        "algorithms": {
+          "title": "Entiende los Conceptos de Algoritmos",
+          "description": "Estudia algoritmos comunes, como ordenación y búsqueda, que se utilizan ampliamente en soluciones de problemas del mundo real."
+        },
+        "webDevelopment": {
+          "title": "Aprende sobre Desarrollo Web Básico",
+          "description": "Familiarízate con HTML, CSS y JavaScript para entender cómo funcionan y se desarrollan las páginas web."
+        },
+        "git": {
+          "title": "Domina el Control de Versiones con Git",
+          "description": "Git es una herramienta esencial para cualquier programador. Aprende a versionar tu código y compartir proyectos en GitHub."
+        }
       }
     }
   },

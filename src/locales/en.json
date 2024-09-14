@@ -4,7 +4,29 @@
     "roadmaps": {
       "beginner": {
         "name": "Beginner",
-        "description": "The perfect starting point for those new to programming. Learn the fundamentals and build your first application."
+        "description": "The perfect starting point for those new to programming. Learn the fundamentals and build your first application.",
+        "events": {
+          "logic": {
+            "title": "Learn Programming Logic",
+            "description": "Before diving into code, it’s important to understand how to solve problems logically. Study concepts like variables, loops, and conditions."
+          },
+          "dataStructures": {
+            "title": "Familiarize Yourself with Simple Data Structures",
+            "description": "Learn about arrays, lists, and dictionaries (or objects), which are fundamental for organizing and processing data in programming."
+          },
+          "algorithms": {
+            "title": "Understand Algorithm Concepts",
+            "description": "Study common algorithms, such as sorting and searching, which are widely used in real-world problem-solving."
+          },
+          "webDevelopment": {
+            "title": "Learn Basic Web Development",
+            "description": "Familiarize yourself with HTML, CSS, and JavaScript to understand how web pages work and are built."
+          },
+          "git": {
+            "title": "Master Version Control with Git",
+            "description": "Git is an essential tool for any programmer. Learn to version your code and share projects on GitHub."
+          }
+        }
       },
       "frontEnd": {
         "name": "Front-End",
@@ -25,6 +47,32 @@
       "ai": {
         "name": "Artificial Intelligence",
         "description": "Dive into the fascinating world of AI and machine learning, learning to create intelligent models and solutions."
+      }
+    }
+  },
+  "roadmaps": {
+    "beginner": {
+      "events": {
+        "logic": {
+          "title": "Learn Programming Logic",
+          "description": "Before diving into code, it’s important to understand how to solve problems logically. Study concepts like variables, loops, and conditions."
+        },
+        "dataStructures": {
+          "title": "Familiarize Yourself with Simple Data Structures",
+          "description": "Learn about arrays, lists, and dictionaries (or objects), which are fundamental for organizing and processing data in programming."
+        },
+        "algorithms": {
+          "title": "Understand Algorithm Concepts",
+          "description": "Study common algorithms, such as sorting and searching, which are widely used in real-world problem-solving."
+        },
+        "webDevelopment": {
+          "title": "Learn Basic Web Development",
+          "description": "Familiarize yourself with HTML, CSS, and JavaScript to understand how web pages work and are built."
+        },
+        "git": {
+          "title": "Master Version Control with Git",
+          "description": "Git is an essential tool for any programmer. Learn to version your code and share projects on GitHub."
+        }
       }
     }
   },
