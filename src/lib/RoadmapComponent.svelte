@@ -1,9 +1,10 @@
 <script>
+  import CourseRecommendations from './CourseRecommendations.svelte'; // Importa o componente de cursos
   export let events = []; // Lista de passos do roadmap
 </script>
 
 <div class="">
-    <div class="flex flex-col grid-cols-9 p-2 mx-auto md:grid max-w-screen-lg">
+  <div class="flex flex-col grid-cols-9 p-2 mx-auto md:grid max-w-screen-lg">
     {#each events as event, index}
       {#if index % 2 === 0}
         <div class="flex md:contents flex-row-reverse">
@@ -12,6 +13,8 @@
           >
             <h3 class="text-lg font-semibold lg:text-xl">{event.title}</h3>
             <p class="mt-2 leading-6">{event.description}</p>
+            <!-- Passando corretamente o courses -->
+            <CourseRecommendations courses={event.courses} />
           </div>
           <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
             <div class="flex items-center justify-center w-6 h-full">
@@ -39,6 +42,8 @@
           >
             <h3 class="text-lg font-semibold lg:text-xl">{event.title}</h3>
             <p class="mt-2 leading-6">{event.description}</p>
+            <!-- Passando corretamente o courses -->
+            <CourseRecommendations courses={event.courses} />
           </div>
         </div>
       {/if}

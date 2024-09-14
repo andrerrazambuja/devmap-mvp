@@ -76,6 +76,11 @@
       }
     }
   },
+  "courseRecommendations": {
+    "viewCoursesButton": "Ver Recomendaciones de Cursos",
+    "modalTitle": "Recomendaciones de Cursos",
+    "closeButton": "Cerrar"
+  },
   "footer": {
     "madeBy": "Hecho con 🔥 por devmap team"
   },
