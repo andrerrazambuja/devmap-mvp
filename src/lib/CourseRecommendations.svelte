@@ -57,7 +57,6 @@
       </h2>
 
       <ul class="space-y-4 mb-16">
-        <!-- Adiciona uma margem inferior -->
         {#each courses.sort((a, b) => a.rank - b.rank) as course}
           <li class="flex justify-between items-center bg-gray-700 p-4 rounded">
             <div class="flex items-center">
@@ -97,25 +96,5 @@
 
   .transition {
     transition: background-color 0.3s ease;
-  }
-
-  .bg-gray-800 {
-    background-color: #2d2d2d;
-  }
-
-  .bg-gray-700 {
-    background-color: #3c3c3c;
-  }
-
-  .text-gray-300 {
-    color: #d4d4d4;
-  }
-
-  .text-purple-400 {
-    color: #9b5de5;
-  }
-
-  .text-white {
-    color: #ffffff;
   }
 </style>
